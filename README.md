@@ -19,11 +19,6 @@ The Python Imaging Library(PIL) and OpenCV for image processing.
    pip install tk
    pip install Pillow
    pip install opencv-python
-These commands install the required libraries:
-
-tk: This is the Tkinter library for creating graphical user interfaces.
-Pillow: This is a fork of the Python Imaging Library (PIL), and it's used for working with images.
-opencv-python: OpenCV is a computer vision library, and the Python package provides bindings for using OpenCV in Python programs.
 
 3. **Run the Application:**
    ```bash
