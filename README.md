@@ -9,7 +9,7 @@ The Python Imaging Library(PIL) and OpenCV for image processing.
 
 ## Setup and Run Instructions
 
-1. **Clone the Repository:**
+1. **Clone/Download zip of the Repository:**
    ```bash
    git clone https://github.com/HiteshNP/DynImagic.git
    cd DynImagic
