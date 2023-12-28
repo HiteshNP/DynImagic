@@ -1,13 +1,17 @@
-# Color Extractor Application README
+# Individual Color Generator Application README
 
 ## Introduction
-This Python application utilizes AI techniques for color separation in a group image, generating individual images with distinct colors. The application is built using the tkinter library for the graphical user interface (GUI) and OpenCV for image processing.
+This Python application utilizes AI techniques for color separation in a group image, generating individual images with distinct colors. 
+
+The application is built using the tkinter library for the graphical user interface (GUI),
+The Python Imaging Library(PIL) and OpenCV for image processing.
 
 ## Setup and Usage
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/color-extractor.git
-   cd color-extractor
+   git clone https://github.com/HiteshNP/DynImagic.git
+   cd DynImagic
+
 Install Dependencies:
 
 bash
