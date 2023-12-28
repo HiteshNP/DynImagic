@@ -1,4 +1,4 @@
-# Individual Color Generator Application README
+# Individual Colored Image Generator Application README
 
 ## Introduction
 This Python application utilizes AI techniques for color separation in a group image, generating individual images with distinct colors. 
