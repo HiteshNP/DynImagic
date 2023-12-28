@@ -7,47 +7,35 @@ The application is built using the tkinter library for the graphical user interf
 
 The Python Imaging Library(PIL) and OpenCV for image processing.
 
-## Setup and Usage
+## Setup and Run Instructions
+
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/HiteshNP/DynImagic.git
-   cd DynImagic
+git clone https://github.com/HiteshNP/DynImagic.git
+cd DynImagic
 
-Install Dependencies:
+2. **Install Dependencies:**
 
-bash
-Copy code
-pip install pillow opencv-python
-Run the Application:
+3. **Run the Application:**
 
-bash
-Copy code
-python color_extractor.py
-Usage:
+4. **Usage:**
+- Click "Upload Group Image" and select a group image.
+- Click "Upload Single Image" and select a single image.
+- Choose a color button to generate individual images based on the selected color.
+- The generated images will be displayed in the GUI.
 
-Click on "Upload Group Image" to select the group image.
-Click on "Upload Single Image" to select a single image.
-Choose a color from the available buttons to extract and generate an image based on that color.
-AI Techniques for Color Separation
-The color separation is achieved using the following AI techniques:
+## AI Techniques for Color Separation
 
-Color Masking: The OpenCV library is used to convert the image to the HSV color space and create a mask for the specified color range.
-Contour Detection: Contours are identified in the mask to locate regions of the specified color.
-Bounding Boxes: Bounding boxes are drawn around the detected regions, and the largest region is extracted as the Region of Interest (ROI).
-Border Removal: A border around the ROI is removed to obtain the final individual color image.
-Example
-Below is an example of how to run the application and generate an individual color image:
+The application uses the following AI techniques for color separation:
 
-bash
-Copy code
-# Clone the repository
-git clone https://github.com/your-username/color-extractor.git
-cd color-extractor
+- **HSV Color Space:** The input images are converted from the RGB color space to the HSV (Hue, Saturation, Value) color space, which is more suitable for color-based segmentation.
 
-# Install dependencies
-pip install pillow opencv-python
+- **Color Masking:** A mask is created for the specified color range in the HSV color space. This mask isolates the pixels within the desired color range.
 
-# Run the application
-python color_extractor.py
-Important Note
-Ensure that both the group image and the single image are uploaded before generating individual color images.
+- **Contour Detection:** Contours are detected in the color mask, representing regions of the specified color.
+
+- **Bounding Boxes:** Bounding boxes are drawn around the detected contours. Small contours are ignored to filter out noise.
+
+- **Largest ROI Extraction:** The application extracts the largest Region of Interest (ROI) based on the bounding boxes. The extracted ROI represents the individual item of the specified color.
+
+- **Image Display:** The GUI displays the generated images, including the largest ROI without the border.
+
