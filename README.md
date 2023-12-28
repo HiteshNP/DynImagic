@@ -4,6 +4,7 @@
 This Python application utilizes AI techniques for color separation in a group image, generating individual images with distinct colors. 
 
 The application is built using the tkinter library for the graphical user interface (GUI),
+
 The Python Imaging Library(PIL) and OpenCV for image processing.
 
 ## Setup and Usage
